@@ -6,5 +6,4 @@ Aplikacja webowa do zarządzania drukarkami 3D, umożliwiająca użytkownikom tw
 ## Funkcjonalności
 - Rejestracja i logowanie użytkowników.
 - Zarządzanie drukarkami 3D (dodawanie, edytowanie, usuwanie).
-- Tworzenie zadań drukowania (przesyłanie plików w formacie STL).
 - Monitorowanie statusu drukowania (w trakcie druku/zakończone).
