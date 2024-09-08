@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>List of Printers</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="text-right">
+        <p>Zalogowany jako: <span th:text="${firstName} + ' ' + ${lastName}"></span></p>
+        <form th:action="@{/logout}" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
+    </div>
+    <h1 class="mb-4 text-center">List of Printers</h1>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Model</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Printing Time</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="printerTableBody">
+
+        </tbody>
+    </table>
+    <div class="text-right">
+        <a href="/add_printer" class="btn btn-success">Add New Printer</a>
+    </div>
+</div>
+<script>
+
+    var countdownTimers = {};
+
+
+    function updatePrinterTable() {
+        $.ajax({
+            url: "/api/printers",
+            method: "GET",
+            success: function(data) {
+                var printerTableBody = $("#printerTableBody");
+                printerTableBody.empty();
+
+
+                data.forEach(function(printer) {
+                    var row = "<tr>" +
+                        "<td>" + printer.name + "</td>" +
+                        "<td>" + printer.model + "</td>" +
+                        "<td>" + printer.location + "</td>" +
+                        "<td id='status-" + printer.id + "'>" + printer.status + "</td>" +
+                        "<td id='time-" + printer.id + "'>" + (printer.printingTime > 0 ? printer.printingTime + "s" : "0s") + "</td>" +
+                        "<td>" +
+                        "<a href='/printers/edit/" + printer.id + "' class='btn btn-primary btn-sm'>Edit</a>" +
+                        "</td>" +
+                        "</tr>";
+                    printerTableBody.append(row);
+
+
+                    if (printer.status === "In progress" && printer.printingTime > 0) {
+                        if (!countdownTimers[printer.id]) {
+                            startCountdown(printer.id, printer.printingTime);
+                        }
+                    }
+                });
+            },
+            error: function() {
+                console.error("Failed to fetch printer data.");
+            }
+        });
+    }
+
+
+    function startCountdown(printerId, remainingTime) {
+        countdownTimers[printerId] = remainingTime;
+
+        var timerInterval = setInterval(function() {
+
+            countdownTimers[printerId]--;
+
+
+            $("#time-" + printerId).text(countdownTimers[printerId] + "s");
+
+
+            if (countdownTimers[printerId] <= 0) {
+                $("#time-" + printerId).text("0s");
+                $("#status-" + printerId).text("Completed");
+                clearInterval(timerInterval);
+
+
+                $.ajax({
+                    url: "/api/printers/update_status",
+                    method: "POST",
+                    data: {
+                        id: printerId,
+                        status: "Completed",
+                        printingTime: 0
+                    },
+                    success: function(response) {
+                        console.log("Status drukarki " + printerId + " został zaktualizowany, printingTime ustawiony na 0.");
+                    },
+                    error: function() {
+                        console.error("Nie udało się zaktualizować statusu drukarki " + printerId);
+                    }
+                });
+
+                delete countdownTimers[printerId];
+            }
+        }, 1000);
+    }
+
+    setInterval(function() {
+        $.ajax({
+            url: "/api/printers",
+            method: "GET",
+            success: function(data) {
+                data.forEach(function(printer) {
+                    if (!countdownTimers[printer.id] && printer.status === "In progress" && printer.printingTime > 0) {
+                        startCountdown(printer.id, printer.printingTime);
+                    }
+                    $("#status-" + printer.id).text(printer.status);
+                });
+            }
+        });
+    }, 5000);
+
+    updatePrinterTable();
+</script>
+
+</body>
+</html>

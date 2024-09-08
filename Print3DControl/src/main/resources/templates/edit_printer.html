@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Edit Printer</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">Edit Printer</h1>
+    <form th:action="@{/update_printer}" th:object="${printer}" method="post">
+        <input type="hidden" th:field="*{id}" />
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" th:field="*{name}" required />
+        </div>
+        <div class="form-group">
+            <label for="model">Model:</label>
+            <input type="text" class="form-control" id="model" th:field="*{model}" required />
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="form-control" id="location" th:field="*{location}" required />
+        </div>
+        <div class="text-right">
+            <button type="submit" class="btn btn-primary">Update Printer</button>
+        </div>
+    </form>
+    <form th:action="@{/printers/delete/{id}(id=${printer.id})}" method="post" onsubmit="return confirm('Are you sure you want to delete this printer?');">
+        <div class="text-right mt-3">
+            <button type="submit" class="btn btn-danger">Delete Printer</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
