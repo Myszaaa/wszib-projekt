@@ -36,6 +36,7 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
        W pliku `src/main/resources/db.template.properties` jest podana dalsza instrukcja do konfiguracji bazy danych w celu ochrony haseł. Dotyczy to wszystkich aplikacji które są potrzebne do zaprezentowania działania projektu.
 
   4. **Uruchom aplikację**
+     Przed uruchomieniem prosze o przeładowanie maven'a.
         Uruchom jako pierwszą aplikację Print3DControl, a następnie Printer3DSimulator.
      
 ## Działanie aplikacji
