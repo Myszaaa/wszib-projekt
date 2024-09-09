@@ -39,5 +39,8 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
         Uruchom jako pierwszą aplikację Print3DControl, a następnie Printer3DSimulator.
      
 ## Działanie aplikacji
-   Wpisz w przeglądarkę w jednej karcie localhost:8080 (aplikacja Print3DControl), a w drugiej karcie localhost:8081/set_print_time (aplikacja Printer3DSimulator).
+  Wpisz w przeglądarkę w jednej karcie localhost:8080 (aplikacja Print3DControl), a w drugiej karcie localhost:8081/set_print_time (aplikacja Printer3DSimulator).
+  -Print3DControl:
+  ![image](https://github.com/user-attachments/assets/2f681e64-8aaf-4f34-960e-9053676c7e1a)
+
      
