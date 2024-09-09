@@ -43,19 +43,19 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
   
   -Print3DControl:
   
-  Pokarze Ci się możliwość rejestracji oraz zalogowania już do istniejącego konta:
+  1. Pokarze Ci się możliwość rejestracji oraz zalogowania już do istniejącego konta:
     ![image](https://github.com/user-attachments/assets/2f681e64-8aaf-4f34-960e-9053676c7e1a)
 
-  Po Zarejestrowaniu i logowaniu zobaczysz listę z drukarkami. 
+  2. Po Zarejestrowaniu i logowaniu zobaczysz listę z drukarkami. 
   ![image](https://github.com/user-attachments/assets/fbc84ea6-309e-4e9d-b591-cd541ff02be0)
 
-  Można je swobodnie dodawać do bazy danych przyciskiem Add New Printer. Podając wymagane dane drukarki.
+  3. Można je swobodnie dodawać do bazy danych przyciskiem Add New Printer. Podając wymagane dane drukarki.
   ![image](https://github.com/user-attachments/assets/83de9531-32da-4b96-a5a7-cb7d4e0519d6)
 
-  Edytować przyciskiem Edit. Gdzie można uaktualnić oraz usunąć drukarkę z bazy. 
+  4. Edytować przyciskiem Edit. Gdzie można uaktualnić oraz usunąć drukarkę z bazy. 
   ![image](https://github.com/user-attachments/assets/41d86609-ec3d-4001-b53c-c34b1e3d8f6c)
 
-  Jest możliwość wylogowania użytkownika co spowoduje powrót do głównej strony.
+  5. Jest możliwość wylogowania użytkownika co spowoduje powrót do głównej strony.
 
 
 
