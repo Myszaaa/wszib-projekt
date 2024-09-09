@@ -1,4 +1,4 @@
-# Print3DControl
+![image](https://github.com/user-attachments/assets/be3aa880-4f1f-489b-b18b-342a8b8fe913)# Print3DControl
 
 ## Opis projektu
 
@@ -61,9 +61,9 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
   6. Aby zaprezentować monitorowanie danej drukarki musimy wykorzystać drugą aplikację Printer3DSimulator.
      W drugiej karcie localhost:8081/set_print_time powinno się pokazać możliwość wybrania ID drukarki oraz czas jaki ma nasz fantomowy wydruk.
      
-     ![image](https://github.com/user-attachments/assets/093aa331-c075-4adf-af6b-f5f54e935d05)
+       ![image](https://github.com/user-attachments/assets/093aa331-c075-4adf-af6b-f5f54e935d05)
 
-  8. ID drukarki zobaczymy w bazie danych.
+  7. ID drukarki zobaczymy w bazie danych.
      Aby zobaczyć tabele z informacjami jakie szukamy musimy: stworzyć query.
      
      Następnie użyć naszej bazy danych: use [nazwa naszej bazy danych]
@@ -73,6 +73,19 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
      Zobaczymy tabelę z drukarkami gdzie mozemy znaleźć informację id drukarki jaką chcemy zasymulować.
      
      ![image](https://github.com/user-attachments/assets/9edd2f86-fa87-4397-8cb2-e2f1c39dcf32)
+
+     8. Jak wiemy jakie id ma nasza drukarka wpisujemy numer id oraz czas druku w odpowiednie miejsca i klikamy Start Printing
+    
+        ![image](https://github.com/user-attachments/assets/dea7ea74-7363-4e61-8788-b90def0d3abe)
+
+        9. Co powinno się zdarzyć?
+            Po wystartowaniu fantomowego wydruku Status drukarki powinien się zmienić na in progress. Następnie możemy monitorować czas jaki został do końca wydruku. Gdy osiągnie 0, status powinien się zmienić na wartość Completed.
+           
+            ![image](https://github.com/user-attachments/assets/44209912-1fc9-403b-875d-183ca69ce6e7)
+
+            
+
+     
 
 
 
