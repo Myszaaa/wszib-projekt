@@ -14,7 +14,7 @@ Na potrzeby monitorowania statusu drukarek, stworzyłem prostą dodatkową aplik
   - Spring Data JPA
   - Spring Security
   - Spring Web
-  - Thymeleaf z integracją Spring Security 6
+  - Thymeleaf
   - Spring Boot DevTools
 - Microsoft SQL Server (MSSQL) JDBC Driver
 
@@ -24,7 +24,7 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
 
 - Java 17 lub nowszą
 - Apache Maven 3.x
-- Microsoft SQL Server (lub dostęp do działającej instancji MSSQL)
+- Microsoft SQL Server 
 - Git (do klonowania repozytorium)
 
   1. **Sklonuj repozytorium**
