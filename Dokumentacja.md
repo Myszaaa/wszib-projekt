@@ -3,7 +3,7 @@
 ## Opis projektu
 
 Print3DControl to aplikacja napisana w Javie z wykorzystaniem frameworka Spring Boot. 
-Aplikacja integruje się z bazą danych Microsoft SQL Server i zawiera funkcje takie jak bezpieczeństwo, obsługa stron internetowych oraz silnik szablonów Thymeleaf do renderowania frontendu. 
+Aplikacja integruje się z bazą danych Microsoft SQL Server.
 Aplikacja służy do zarządzania i monitorowania drukarek 3D.
 Na potrzeby monitorowania statusu drukarek, stworzyłem prostą dodatkową aplikację która "symuluje" zachowanie drukarki. 
 
