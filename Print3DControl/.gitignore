@@ -33,13 +33,4 @@ build/
 ### VS Code ###
 .vscode/
 
-### System-specific ###
-.DS_Store
 
-
-### Environment files ###
-*.env
-.env.local
-
-### Logs ###
-*.log
