@@ -60,13 +60,18 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
 
   6. Aby zaprezentować monitorowanie danej drukarki musimy wykorzystać drugą aplikację Printer3DSimulator.
      W drugiej karcie localhost:8081/set_print_time powinno się pokazać możliwość wybrania ID drukarki oraz czas jaki ma nasz fantomowy wydruk.
+     
      ![image](https://github.com/user-attachments/assets/093aa331-c075-4adf-af6b-f5f54e935d05)
 
-  7. ID drukarki zobaczymy w bazie danych.
+  8. ID drukarki zobaczymy w bazie danych.
      Aby zobaczyć tabele z informacjami jakie szukamy musimy: stworzyć query.
+     
      Następnie użyć naszej bazy danych: use [nazwa naszej bazy danych]
+     
      Używając select * from printerUnits.Printers; wyświetlimy tablicę z drukarkami.
+     
      Zobaczymy tabelę z drukarkami gdzie mozemy znaleźć informację id drukarki jaką chcemy zasymulować.
+     
      ![image](https://github.com/user-attachments/assets/9edd2f86-fa87-4397-8cb2-e2f1c39dcf32)
 
 
