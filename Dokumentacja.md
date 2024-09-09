@@ -35,7 +35,7 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
        Aplikacje korzystają z bazy danych Microsoft SQL Server. Konfiguracja połączenia znajduje się w plikach `src/main/resources/application.properties` oraz `src/main/resources/db.template.properties`.
        W pliku `src/main/resources/db.template.properties` jest podana dalsza instrukcja do konfiguracji bazy danych w celu ochrony haseł. Dotyczy to wszystkich aplikacji które są potrzebne do zaprezentowania działania projektu.
 
-  4. ** Uruchom aplikację**
+  4. **Uruchom aplikację**
         Uruchom jako pierwszą aplikację Print3DControl, a następnie Printer3DSimulator.
      
 ## Działanie aplikacji
@@ -56,6 +56,19 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
   ![image](https://github.com/user-attachments/assets/41d86609-ec3d-4001-b53c-c34b1e3d8f6c)
 
   5. Jest możliwość wylogowania użytkownika co spowoduje powrót do głównej strony.
+  ![image](https://github.com/user-attachments/assets/3e6614e8-c416-4139-acd4-36c8c3381475)
+
+  6. Aby zaprezentować monitorowanie danej drukarki musimy wykorzystać drugą aplikację Printer3DSimulator.
+     W drugiej karcie localhost:8081/set_print_time powinno się pokazać możliwość wybrania ID drukarki oraz czas jaki ma nasz fantomowy wydruk.
+     ![image](https://github.com/user-attachments/assets/093aa331-c075-4adf-af6b-f5f54e935d05)
+
+  7. ID drukarki zobaczymy w bazie danych.
+     Aby zobaczyć tabele z informacjami jakie szukamy musimy: stworzyć query.
+     Następnie użyć naszej bazy danych: use [nazwa naszej bazy danych]
+     Używając select * from printerUnits.Printers; wyświetlimy tablicę z drukarkami.
+     Zobaczymy tabelę z drukarkami gdzie mozemy znaleźć informację id drukarki jaką chcemy zasymulować.
+     ![image](https://github.com/user-attachments/assets/9edd2f86-fa87-4397-8cb2-e2f1c39dcf32)
+
 
 
 
