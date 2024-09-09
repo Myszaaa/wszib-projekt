@@ -47,7 +47,7 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
     ![image](https://github.com/user-attachments/assets/2f681e64-8aaf-4f34-960e-9053676c7e1a)
 
   2. Po Zarejestrowaniu i logowaniu zobaczysz listę z drukarkami. 
-  ![image](https://github.com/user-attachments/assets/fbc84ea6-309e-4e9d-b591-cd541ff02be0)
+  ![image](https://github.com/user-attachments/assets/fd4cef63-561c-41c6-8332-6b99ade9b81d)
 
   3. Można je swobodnie dodawać do bazy danych przyciskiem Add New Printer. Podając wymagane dane drukarki.
   ![image](https://github.com/user-attachments/assets/83de9531-32da-4b96-a5a7-cb7d4e0519d6)
@@ -74,14 +74,14 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
      
      ![image](https://github.com/user-attachments/assets/9edd2f86-fa87-4397-8cb2-e2f1c39dcf32)
 
-     8. Jak wiemy jakie id ma nasza drukarka wpisujemy numer id oraz czas druku w odpowiednie miejsca i klikamy Start Printing
+  8. Jak wiemy jakie id ma nasza drukarka wpisujemy numer id oraz czas druku w odpowiednie miejsca i klikamy Start Printing
     
-        ![image](https://github.com/user-attachments/assets/dea7ea74-7363-4e61-8788-b90def0d3abe)
+     ![image](https://github.com/user-attachments/assets/dea7ea74-7363-4e61-8788-b90def0d3abe)
 
-        9. Co powinno się zdarzyć?
-            Po wystartowaniu fantomowego wydruku Status drukarki powinien się zmienić na in progress. Następnie możemy monitorować czas jaki został do końca wydruku. Gdy osiągnie 0, status powinien się zmienić na wartość Completed.
-           
-            ![image](https://github.com/user-attachments/assets/44209912-1fc9-403b-875d-183ca69ce6e7)
+   9. Co powinno się zdarzyć?
+      Po wystartowaniu fantomowego wydruku Status drukarki powinien się zmienić na in progress. Następnie możemy monitorować czas jaki został do końca wydruku. Gdy osiągnie 0, status powinien się zmienić na wartość Completed.
+      
+      ![image](https://github.com/user-attachments/assets/44209912-1fc9-403b-875d-183ca69ce6e7)
 
             
 
