@@ -57,6 +57,7 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
   ![image](https://github.com/user-attachments/assets/41d86609-ec3d-4001-b53c-c34b1e3d8f6c)
 
   5. Jest możliwość wylogowania użytkownika co spowoduje powrót do głównej strony.
+     
   ![image](https://github.com/user-attachments/assets/3e6614e8-c416-4139-acd4-36c8c3381475)
 
   6. Aby zaprezentować monitorowanie danej drukarki musimy wykorzystać drugą aplikację Printer3DSimulator.
