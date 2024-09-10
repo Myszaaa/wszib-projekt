@@ -28,8 +28,8 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
 - Git (do klonowania repozytorium)
 
   1. **Sklonuj repozytorium**
-       Repozytorium z projektem zarządzania drukarkami: https://github.com/Myszaaa/wszib-projekt
-       Repozytorium z aplikacją która symuluje zachowanie drukarki: https://github.com/Myszaaa/Printer3DSimulator
+      - Repozytorium z projektem zarządzania drukarkami: https://github.com/Myszaaa/wszib-projekt
+      - Repozytorium z aplikacją która symuluje zachowanie drukarki: https://github.com/Myszaaa/Printer3DSimulator
      
   3. **Skonfiguruj połączenie z bazą danych**
        Aplikacje korzystają z bazy danych Microsoft SQL Server. Konfiguracja połączenia znajduje się w plikach `src/main/resources/application.properties` oraz `src/main/resources/db.template.properties`.
