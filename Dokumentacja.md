@@ -32,12 +32,12 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
       - Repozytorium z aplikacją która symuluje zachowanie drukarki: https://github.com/Myszaaa/Printer3DSimulator
      
   3. **Skonfiguruj połączenie z bazą danych**
-       Aplikacje korzystają z bazy danych Microsoft SQL Server. Konfiguracja połączenia znajduje się w plikach `src/main/resources/application.properties` oraz `src/main/resources/db.template.properties`.
-       W pliku `src/main/resources/db.template.properties` jest podana dalsza instrukcja do konfiguracji bazy danych w celu ochrony haseł. Dotyczy to wszystkich aplikacji które są potrzebne do zaprezentowania działania projektu.
+      - Aplikacje korzystają z bazy danych Microsoft SQL Server. Konfiguracja połączenia znajduje się w plikach `src/main/resources/application.properties` oraz `src/main/resources/db.template.properties`.
+      - W pliku `src/main/resources/db.template.properties` jest podana dalsza instrukcja do konfiguracji bazy danych w celu ochrony haseł. Dotyczy to wszystkich aplikacji które są potrzebne do zaprezentowania działania projektu.
 
   4. **Uruchom aplikację**
-     Przed uruchomieniem prosze o przeładowanie maven'a.
-        Uruchom jako pierwszą aplikację Print3DControl, a następnie Printer3DSimulator.
+     - Przed uruchomieniem prosze o przeładowanie maven'a.
+     - Uruchom jako pierwszą aplikację Print3DControl, a następnie Printer3DSimulator.
      
 ## Działanie aplikacji
   Wpisz w przeglądarkę w jednej karcie localhost:8080 (aplikacja Print3DControl), a w drugiej karcie localhost:8081/set_print_time (aplikacja Printer3DSimulator).
