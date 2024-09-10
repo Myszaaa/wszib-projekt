@@ -44,7 +44,7 @@ Aby uruchomić ten projekt, musisz mieć zainstalowane:
   
   -Print3DControl:
   
-  1. Pokarze Ci się możliwość rejestracji oraz zalogowania już do istniejącego konta:
+  1. Pokaże się możliwość rejestracji oraz zalogowania już do istniejącego konta:
     ![image](https://github.com/user-attachments/assets/2f681e64-8aaf-4f34-960e-9053676c7e1a)
 
   2. Po Zarejestrowaniu i logowaniu zobaczysz listę z drukarkami. 
